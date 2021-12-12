@@ -1,6 +1,6 @@
 ![medium](https://user-images.githubusercontent.com/50579392/145682204-4da99ef2-b0d9-4b0c-9604-08b5a00423e6.png)
 
-###Clone popular web platform Medium, using such technologies: React, React-Hooks, Redux, React-Router Axios, classnames, query-string
+## Clone popular web platform Medium, using such technologies: React, React-Hooks, Redux, React-Router Axios, classnames, query-string
 
 ## Available Scripts
 
