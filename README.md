@@ -10,8 +10,7 @@
 - axios
 - classnames
 - query-string
-- css3
-- CRA-template
+- CSS3
 
 ## Installation
 ### Prerequisites
