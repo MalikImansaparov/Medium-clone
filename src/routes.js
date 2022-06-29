@@ -1,6 +1,5 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-
 import GlobalFeed from 'src/pages/globalFeed'
 import YourFeed from 'src/pages/yourFeed'
 import TagFeed from 'src/pages/tagFeed'
