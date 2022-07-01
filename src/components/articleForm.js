@@ -28,8 +28,6 @@ const ArticleForm = ({onSubmit, errors, initialValues}) => {
     setTagList(initialValues.tagList)
   }, [initialValues])
 
-  console.log('fields', title, body, description, tagList)
-
   return (
     <div className="editor-page">
       <div className="container page">
