@@ -1,6 +1,5 @@
 import {useState, useEffect, useCallback} from 'react'
 import axios from 'axios'
-
 import useLocalStorage from 'src/hooks/useLocalStorage'
 
 export default url => {
