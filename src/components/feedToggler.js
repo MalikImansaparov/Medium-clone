@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
-import {NavLink} from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom';
 import {CurrentUserContext} from 'src/contexts/currentUser'
 
 const FeedToggler = ({tagName}) => {
