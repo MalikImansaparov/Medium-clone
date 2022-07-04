@@ -1,32 +1,31 @@
-import {useEffect, useContext} from 'react'
+import { useEffect, useContext } from 'react';
+import useFetch from 'src/hooks/useFetch';
+import { CurrentUserContext } from 'src/contexts/currentUser';
+import useLocalStorage from 'src/hooks/useLocalStorage';
 
-import useFetch from 'src/hooks/useFetch'
-import {CurrentUserContext} from 'src/contexts/currentUser'
-import useLocalStorage from 'src/hooks/useLocalStorage'
-
-const CurrentUserChecker = ({children}) => {
-  const [, dispatch] = useContext(CurrentUserContext)
-  const [{response}, doFetch] = useFetch('/user')
-  const [token] = useLocalStorage('token')
+const CurrentUserChecker = ({ children }) => {
+  const [, dispatch] = useContext(CurrentUserContext);
+  const [{ response }, doFetch] = useFetch('/user');
+  const [token] = useLocalStorage('token');
 
   useEffect(() => {
     if (!token) {
-      dispatch({type: 'SET_UNAUTHORIZED'})
-      return
+      dispatch({ type: 'SET_UNAUTHORIZED' });
+      return;
     }
 
-    doFetch()
-    dispatch({type: 'LOADING'})
-  }, [doFetch, dispatch, token])
+    doFetch();
+    dispatch({ type: 'LOADING' });
+  }, [doFetch, dispatch, token]);
 
   useEffect(() => {
     if (!response) {
-      return
+      return;
     }
 
-    dispatch({type: 'SET_AUTHORIZED', payload: response.user})
-  }, [response, dispatch])
-  return children
-}
+    dispatch({ type: 'SET_AUTHORIZED', payload: response.user });
+  }, [response, dispatch]);
+  return children;
+};
 
-export default CurrentUserChecker
+export default CurrentUserChecker;
