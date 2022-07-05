@@ -1,6 +1,5 @@
 import React, {useContext, Fragment} from 'react'
 import {NavLink, Link} from 'react-router-dom'
-
 import {CurrentUserContext} from 'src/contexts/currentUser'
 
 const Topbar = () => {
