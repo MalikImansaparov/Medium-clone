@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
 import TagList from 'src/components/tagList'
 import AddToFavorites from 'src/components/addToFavorites'
 
