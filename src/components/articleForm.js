@@ -21,7 +21,6 @@ const ArticleForm = ({onSubmit, errors, initialValues}) => {
     if (!initialValues) {
       return
     }
-
     setTitle(initialValues.title)
     setDescription(initialValues.description)
     setBody(initialValues.body)
