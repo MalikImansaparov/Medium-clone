@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react'
 import {Link, Redirect} from 'react-router-dom'
-
 import useFetch from 'src/hooks/useFetch'
 import useLocalStorage from 'src/hooks/useLocalStorage'
 import {CurrentUserContext} from 'src/contexts/currentUser'
