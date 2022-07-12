@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react'
 import {Redirect} from 'react-router-dom'
-
 import ArticleForm from 'src/components/articleForm'
 import useFetch from 'src/hooks/useFetch'
 import {CurrentUserContext} from 'src/contexts/currentUser'
