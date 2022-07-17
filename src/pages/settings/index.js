@@ -1,6 +1,5 @@
 import React, {useState, useContext, useEffect} from 'react'
 import {Redirect} from 'react-router-dom'
-
 import {CurrentUserContext} from 'src/contexts/currentUser'
 import useFetch from 'src/hooks/useFetch'
 import BackendErrorMessages from 'src/components/backendErrorMessages'
