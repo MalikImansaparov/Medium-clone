@@ -1,6 +1,5 @@
 import React, {useEffect, Fragment} from 'react'
 import {stringify} from 'query-string'
-
 import Feed from 'src/components/feed'
 import useFetch from 'src/hooks/useFetch'
 import Pagination from 'src/components/pagination'
